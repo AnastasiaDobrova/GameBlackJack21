@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Game">
+    tools:context=".GameActivity">
 
     <TextView
         android:id="@+id/gameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Here will be the game"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="TextView"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="48dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
