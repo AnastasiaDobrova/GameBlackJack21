@@ -13,5 +13,7 @@ class GameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         gameText = findViewById(R.id.gameText)
+
+
     }
 }
