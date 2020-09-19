@@ -6,12 +6,203 @@
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/player2"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer2"
+            app:srcCompat="@drawable/purpleback" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer2"
+            app:srcCompat="@drawable/purpleback" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer2"
+            app:srcCompat="@drawable/purpleback" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer2"
+            app:srcCompat="@drawable/purpleback" />
+
+        <TextView
+            android:id="@+id/namePlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/messageText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <Button
+            android:id="@+id/yesButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:text="yes"
+            app:layout_constraintEnd_toStartOf="@+id/noButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messageText2" />
+
+        <Button
+            android:id="@+id/noButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:text="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yesButton2"
+            app:layout_constraintTop_toBottomOf="@+id/messageText2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:id="@+id/gameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="48dp" />
+        android:layout_marginTop="20dp"
+        android:text="Here will be the game!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/player1"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameText">
+
+        <TextView
+            android:id="@+id/namePlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/messageText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <Button
+            android:id="@+id/yesButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:text="yes"
+            app:layout_constraintEnd_toStartOf="@+id/noButton1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messageText1" />
+
+        <Button
+            android:id="@+id/noButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:text="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yesButton1"
+            app:layout_constraintTop_toBottomOf="@+id/messageText1" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer1"
+            app:srcCompat="@drawable/purpleback" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer1"
+            app:srcCompat="@drawable/purpleback" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer1"
+            app:srcCompat="@drawable/purpleback" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="82dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer1"
+            app:srcCompat="@drawable/purpleback" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
