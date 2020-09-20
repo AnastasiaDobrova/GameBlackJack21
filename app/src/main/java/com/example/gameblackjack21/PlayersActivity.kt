@@ -5,34 +5,29 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 
 class PlayersActivity : AppCompatActivity() {
-
-    lateinit var questionView : TextView
-    lateinit var answerView: EditText
-    var numberOfPlayers = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_players)
 
-        questionView = findViewById(R.id.qestionView)
-        answerView = findViewById(R.id.answerView)
+        val name1View = findViewById<EditText>(R.id.name1View)
+        val name2View = findViewById<EditText>(R.id.name2View)
+        val playButton = findViewById<Button>(R.id.playButton)
 
-        val button = findViewById<Button>(R.id.playButton)
+        playButton.setOnClickListener {
+            val namePlayer1 = name1View.text.toString()
+            val namePlayer2 = name2View.text.toString()
 
-        button.setOnClickListener {
-            startGame()
+            val intent = Intent(this@PlayersActivity, GameActivity::class.java)
+            intent.putExtra("Player1", namePlayer1)
+            intent.putExtra("Player2", namePlayer2)
+
+            startActivity(intent)
         }
     }
-
-    override fun onRestart() {
-        super.onRestart()
-    }
-
-    fun startGame() {
-        val intent = Intent(this , GameActivity::class.java )
-        startActivity(intent)
-    }
 }
+
+
+
