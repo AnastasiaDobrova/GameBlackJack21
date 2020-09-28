@@ -1,10 +1,13 @@
 package com.example.gameblackjack21
 
+import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_game.*
-import kotlinx.android.synthetic.main.activity_players.*
+import java.lang.Math.random
+import kotlin.random.Random
 
 class GameActivity : AppCompatActivity() {
 
@@ -22,5 +25,14 @@ class GameActivity : AppCompatActivity() {
 
         namePlayer1.text = "Player: "+name1View+""
         namePlayer2.text = "Player: "+name2View+""
+/*
+        val card1Player1 = findViewById<ImageView>(R.id.card1Player1)
+        card1Player1.setImageResource(R.drawable.clubace)
+ */
+        var cardNames = arrayOf(R.drawable.clubace, R.drawable.clubeight, R.drawable.clubjack, R.drawable.clubking);
+        yesButton1.setOnClickListener {
+        var n = random()
+            card1Player1.setImageResource(cardNames[n.toInt()]);
+         }
     }
 }
