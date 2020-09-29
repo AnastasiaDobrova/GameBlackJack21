@@ -1,13 +1,16 @@
 package com.example.gameblackjack21
 
-import android.graphics.BitmapFactory
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.sax.Element
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_game.*
-import java.lang.Math.random
-import kotlin.random.Random
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.random.Random.Default.nextInt
 
 class GameActivity : AppCompatActivity() {
 
@@ -25,14 +28,39 @@ class GameActivity : AppCompatActivity() {
 
         namePlayer1.text = "Player: "+name1View+""
         namePlayer2.text = "Player: "+name2View+""
-/*
+
+        val yesButton1 = findViewById<Button>(R.id.yesButton1)
+
         val card1Player1 = findViewById<ImageView>(R.id.card1Player1)
-        card1Player1.setImageResource(R.drawable.clubace)
- */
-        var cardNames = arrayOf(R.drawable.clubace, R.drawable.clubeight, R.drawable.clubjack, R.drawable.clubking);
-        yesButton1.setOnClickListener {
-        var n = random()
-            card1Player1.setImageResource(cardNames[n.toInt()]);
-         }
+
+
+        var cards = mutableListOf(R.drawable.clubjack, R.drawable.clubeight, R.drawable.clubace, R.drawable.clubnine, R.drawable.clubqueenthree)
+        var r = Random()
+        var n = r.nextInt(cards.size)
+
+        card1Player1.setOnClickListener {
+            card1Player1.setImageResource(cards[n])
+            card1Player1.setOnClickListener {
+                card1Player1
+            }
+        }
+        card2Player1.setOnClickListener {
+            card2Player1.setImageResource(cards[n])
+            card2Player1.setOnClickListener {
+                card2Player1
+            }
+        }
+        card3Player1.setOnClickListener {
+            card3Player1.setImageResource(cards[n])
+            card3Player1.setOnClickListener {
+                card3Player1
+            }
+        }
+        card4Player1.setOnClickListener {
+            card4Player1.setImageResource(cards[n])
+            card4Player1.setOnClickListener {
+                card4Player1
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 package com.example.gameblackjack21
 
-class Cards(newSuit: Int, newRank: Int) {
+class Cards(newSuit: Int, newRank: Int, name: String? = null, image: Int? = 0 ) {
     private var suit: CardSuits? = null
     private var rank: CardRanks? = null
     val nameOfCard: String
@@ -43,5 +43,6 @@ internal enum class CardSuits {
 }
 
 internal enum class CardRanks(val value: Int) {
-    Ace(11), King(4), Queen(3), Jack(2), Ten(10), Nine(9), Eight(8), Seven(7), Six(6);
+    Ace(11,), King(4), Queen(3), Jack(2), Ten(10), Nine(9), Eight(8), Seven(7), Six(6);
 }
+

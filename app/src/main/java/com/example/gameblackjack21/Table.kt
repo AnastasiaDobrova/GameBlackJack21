@@ -16,7 +16,7 @@ class Table internal constructor() {
     init {
         for (i in 0..3) {
             for (j in 0..8) {
-                cards.add(Cards(i, j))
+                cards.add(Cards(i, j, ))
             }
         }
     }
