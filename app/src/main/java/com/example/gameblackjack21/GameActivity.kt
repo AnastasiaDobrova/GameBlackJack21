@@ -45,94 +45,71 @@ class GameActivity : AppCompatActivity() {
         var card4Player2Value = 0
 
 
-        card1Player1.setOnClickListener {
+        yesButton1.setOnClickListener {
             currentCards = cardsList.getNewCard()
             card1Player1Value = currentCards!!.value
             valuePlayer1 = card1Player1Value
             textCard1.text = card1Player1Value.toString()
             card1Player1.setImageResource(currentCards!!.image)
-            card1Player1.setOnClickListener {
-                card1Player1
-            }
-        }
-        card2Player1.setOnClickListener {
-            currentCards = cardsList.getNewCard()
-            card2Player1Value = currentCards!!.value
-            valuePlayer1 = card2Player1Value + card1Player1Value
-            textCard1.text = valuePlayer1.toString()
-            card2Player1.setImageResource(currentCards!!.image)
-            card2Player1.setOnClickListener {
-                card2Player1
-            }
-        }
-        card3Player1.setOnClickListener {
-            currentCards = cardsList.getNewCard()
-            card3Player1Value = currentCards!!.value
-            valuePlayer1 = card3Player1Value +card2Player1Value + card1Player1Value
-            textCard1.text = valuePlayer1.toString()
-            card3Player1.setImageResource(currentCards!!.image)
-            card3Player1.setOnClickListener {
-                card3Player1
-            }
-        }
-        card4Player1.setOnClickListener {
-            currentCards = cardsList.getNewCard()
-            card4Player1Value = currentCards!!.value
-            valuePlayer1 = card4Player1Value +card3Player1Value +card2Player1Value + card1Player1Value
-            textCard1.text = valuePlayer1.toString()
-            card4Player1.setImageResource(currentCards!!.image)
-            card4Player1.setOnClickListener {
-                card4Player1
+            yesButton1.setOnClickListener {
+                currentCards = cardsList.getNewCard()
+                card2Player1Value = currentCards!!.value
+                valuePlayer1 = card2Player1Value + card1Player1Value
+                textCard1.text = valuePlayer1.toString()
+                card2Player1.setImageResource(currentCards!!.image)
+                yesButton1.setOnClickListener {
+                    currentCards = cardsList.getNewCard()
+                    card3Player1Value = currentCards!!.value
+                    valuePlayer1 = card3Player1Value +card2Player1Value + card1Player1Value
+                    textCard1.text = valuePlayer1.toString()
+                    card3Player1.setImageResource(currentCards!!.image)
+                    yesButton1.setOnClickListener {
+                        currentCards = cardsList.getNewCard()
+                        card4Player1Value = currentCards!!.value
+                        valuePlayer1 = card4Player1Value +card3Player1Value +card2Player1Value + card1Player1Value
+                        textCard1.text = valuePlayer1.toString()
+                        card4Player1.setImageResource(currentCards!!.image)
+                        yesButton1.setOnClickListener {
+                            card4Player1
+                        }
+                    }
+                }
             }
         }
 
 
-
-        card1Player2.setOnClickListener {
+        yesButton2.setOnClickListener {
             currentCards = cardsList.getNewCard()
             card1Player2Value = currentCards!!.value
-            valuePlayer2 = card1Player1Value
+            valuePlayer2 = card1Player2Value
             textCard2.text = card1Player2Value.toString()
             card1Player2.setImageResource(currentCards!!.image)
-            card1Player2.setOnClickListener {
-                card1Player2
+            yesButton2.setOnClickListener {
+                currentCards = cardsList.getNewCard()
+                card2Player2Value = currentCards!!.value
+                valuePlayer2 = card2Player2Value + card1Player2Value
+                textCard2.text = valuePlayer2.toString()
+                card2Player2.setImageResource(currentCards!!.image)
+                yesButton2.setOnClickListener {
+                    currentCards = cardsList.getNewCard()
+                    card3Player2Value = currentCards!!.value
+                    valuePlayer2 = card3Player2Value +card2Player2Value + card1Player2Value
+                    textCard2.text = valuePlayer2.toString()
+                    card3Player2.setImageResource(currentCards!!.image)
+                    yesButton2.setOnClickListener {
+                        currentCards = cardsList.getNewCard()
+                        card4Player2Value = currentCards!!.value
+                        valuePlayer2 = card4Player2Value +card3Player2Value +card2Player2Value + card1Player2Value
+                        textCard2.text = valuePlayer2.toString()
+                        card4Player2.setImageResource(currentCards!!.image)
+                        yesButton2.setOnClickListener {
+                            card4Player2
+                        }
+                    }
+                }
             }
         }
-        card2Player2.setOnClickListener {
-            currentCards = cardsList.getNewCard()
-            card2Player2Value = currentCards!!.value
-            valuePlayer2 = card2Player2Value + card1Player2Value
-            textCard2.text = valuePlayer2.toString()
-            card2Player2.setImageResource(currentCards!!.image)
-            card2Player2.setOnClickListener {
-                card2Player2
-            }
-        }
-        card3Player2.setOnClickListener {
-            currentCards = cardsList.getNewCard()
-            card3Player2Value = currentCards!!.value
-            valuePlayer2 = card3Player2Value +card2Player2Value + card1Player2Value
-            textCard2.text = valuePlayer2.toString()
-            card3Player2.setImageResource(currentCards!!.image)
-            card3Player2.setOnClickListener {
-                card3Player2
-            }
-        }
-        card4Player2.setOnClickListener {
-            currentCards = cardsList.getNewCard()
-            card4Player2Value = currentCards!!.value
-            valuePlayer2 = card4Player2Value +card3Player2Value +card2Player2Value + card1Player2Value
-            textCard2.text = valuePlayer2.toString()
-            card4Player2.setImageResource(currentCards!!.image)
-            card4Player2.setOnClickListener {
-                card4Player2
-            }
-        }
-
-
-
     }
-
 }
        /* var cards = mutableListOf(R.drawable.clubjack, R.drawable.clubeight, R.drawable.clubace, R.drawable.clubnine, R.drawable.clubqueenthree)
         var r = Random()
