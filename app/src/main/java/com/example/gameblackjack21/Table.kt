@@ -1,5 +1,5 @@
 package com.example.gameblackjack21
-
+/*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -21,3 +21,5 @@ class Table internal constructor() {
         }
     }
 }
+
+ */

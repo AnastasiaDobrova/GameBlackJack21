@@ -4,6 +4,7 @@ import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.sax.Element
+import android.view.MotionEvent
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,6 +14,9 @@ import kotlin.collections.ArrayList
 import kotlin.random.Random.Default.nextInt
 
 class GameActivity : AppCompatActivity() {
+
+    val cardsList = CardsList()
+    var currentCards : Cards? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,12 +33,82 @@ class GameActivity : AppCompatActivity() {
         namePlayer1.text = "Player: "+name1View+""
         namePlayer2.text = "Player: "+name2View+""
 
-        val yesButton1 = findViewById<Button>(R.id.yesButton1)
-
-        val card1Player1 = findViewById<ImageView>(R.id.card1Player1)
 
 
-        var cards = mutableListOf(R.drawable.clubjack, R.drawable.clubeight, R.drawable.clubace, R.drawable.clubnine, R.drawable.clubqueenthree)
+
+
+        card1Player1.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.inputType = currentCards!!.value
+            card1Player1.setImageResource(currentCards!!.image)
+            card1Player1.setOnClickListener {
+                card1Player1
+            }
+        }
+        card2Player1.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.inputType = currentCards!!.value
+            card2Player1.setImageResource(currentCards!!.image)
+            card2Player1.setOnClickListener {
+                card2Player1
+            }
+        }
+        card3Player1.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.text = currentCards?.name
+            card3Player1.setImageResource(currentCards!!.image)
+            card3Player1.setOnClickListener {
+                card3Player1
+            }
+        }
+        card4Player1.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.text = currentCards?.name
+            card4Player1.setImageResource(currentCards!!.image)
+            card4Player1.setOnClickListener {
+                card4Player1
+            }
+        }
+
+        card1Player2.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.inputType = currentCards!!.value
+            card1Player2.setImageResource(currentCards!!.image)
+            card1Player2.setOnClickListener {
+                card1Player2
+            }
+        }
+        card2Player2.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.inputType = currentCards!!.value
+            card2Player2.setImageResource(currentCards!!.image)
+            card2Player2.setOnClickListener {
+                card2Player2
+            }
+        }
+        card3Player2.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.text = currentCards?.name
+            card3Player2.setImageResource(currentCards!!.image)
+            card3Player2.setOnClickListener {
+                card3Player2
+            }
+        }
+        card4Player2.setOnClickListener {
+            currentCards = cardsList.getNewCard()
+            textCard1.text = currentCards?.name
+            card4Player2.setImageResource(currentCards!!.image)
+            card4Player2.setOnClickListener {
+                card4Player2
+            }
+        }
+
+
+
+    }
+
+}
+       /* var cards = mutableListOf(R.drawable.clubjack, R.drawable.clubeight, R.drawable.clubace, R.drawable.clubnine, R.drawable.clubqueenthree)
         var r = Random()
         var n1 = r.nextInt(cards.size)
         var n2 = r.nextInt(cards.size)
@@ -68,4 +142,5 @@ class GameActivity : AppCompatActivity() {
             }
         }
     }
-}
+
+        */

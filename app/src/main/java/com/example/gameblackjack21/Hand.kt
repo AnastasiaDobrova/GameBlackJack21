@@ -1,5 +1,5 @@
 package com.example.gameblackjack21
-
+/*
 class Hand internal constructor(//айди не статический, потому-что каждую игру нужно начинать с игрока №1
     private val id: Int
 ) {
@@ -43,3 +43,5 @@ class Hand internal constructor(//айди не статический, пото
         oneMoreCard //каждому игроку выдаётся по 1 карте вначале
     }
 }
+
+ */
