@@ -69,7 +69,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/messageToPlayer2"
+            android:id="@+id/textCard2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -87,7 +87,7 @@
             android:text="yes"
             app:layout_constraintEnd_toStartOf="@+id/noButton2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/messageToPlayer2" />
+            app:layout_constraintTop_toBottomOf="@+id/textCard2" />
 
         <Button
             android:id="@+id/noButton2"
@@ -98,7 +98,7 @@
             android:text="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/yesButton2"
-            app:layout_constraintTop_toBottomOf="@+id/messageToPlayer2" />
+            app:layout_constraintTop_toBottomOf="@+id/textCard2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
