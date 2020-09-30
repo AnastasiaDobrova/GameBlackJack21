@@ -36,28 +36,33 @@ class GameActivity : AppCompatActivity() {
 
         var cards = mutableListOf(R.drawable.clubjack, R.drawable.clubeight, R.drawable.clubace, R.drawable.clubnine, R.drawable.clubqueenthree)
         var r = Random()
-        var n = r.nextInt(cards.size)
+        var n1 = r.nextInt(cards.size)
+        var n2 = r.nextInt(cards.size)
+        var n3 = r.nextInt(cards.size)
+        var n4 = r.nextInt(cards.size)
+
 
         card1Player1.setOnClickListener {
-            card1Player1.setImageResource(cards[n])
+            card1Player1.setImageResource(cards[n1])
+
             card1Player1.setOnClickListener {
                 card1Player1
             }
         }
         card2Player1.setOnClickListener {
-            card2Player1.setImageResource(cards[n])
+            card2Player1.setImageResource(cards[n2])
             card2Player1.setOnClickListener {
                 card2Player1
             }
         }
         card3Player1.setOnClickListener {
-            card3Player1.setImageResource(cards[n])
+            card3Player1.setImageResource(cards[n3])
             card3Player1.setOnClickListener {
                 card3Player1
             }
         }
         card4Player1.setOnClickListener {
-            card4Player1.setImageResource(cards[n])
+            card4Player1.setImageResource(cards[n4])
             card4Player1.setOnClickListener {
                 card4Player1
             }
