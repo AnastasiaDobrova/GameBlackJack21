@@ -33,13 +33,19 @@ class GameActivity : AppCompatActivity() {
         namePlayer1.text = "Player: "+name1View+""
         namePlayer2.text = "Player: "+name2View+""
 
-
+        var value = 0
+        var card1Player1Value = 0
+        var card2Player1Value = 0
+        var card3Player1Value = 0
+        var card4Player1Value = 0
 
 
 
         card1Player1.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.inputType = currentCards!!.value
+            card1Player1Value = currentCards!!.value
+            value = card1Player1Value
+            textCard1.text = card1Player1Value.toString()
             card1Player1.setImageResource(currentCards!!.image)
             card1Player1.setOnClickListener {
                 card1Player1
@@ -47,7 +53,10 @@ class GameActivity : AppCompatActivity() {
         }
         card2Player1.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.inputType = currentCards!!.value
+            card2Player1Value = currentCards!!.value
+            value = card2Player1Value + card1Player1Value
+            textCard1.text = value.toString()
+            //textCard1.inputType = currentCards!!.value
             card2Player1.setImageResource(currentCards!!.image)
             card2Player1.setOnClickListener {
                 card2Player1
@@ -55,7 +64,10 @@ class GameActivity : AppCompatActivity() {
         }
         card3Player1.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.text = currentCards?.name
+            card3Player1Value = currentCards!!.value
+            value = card3Player1Value +card2Player1Value + card1Player1Value
+            textCard1.text = value.toString()
+            //textCard1.text = currentCards?.name
             card3Player1.setImageResource(currentCards!!.image)
             card3Player1.setOnClickListener {
                 card3Player1
@@ -63,7 +75,10 @@ class GameActivity : AppCompatActivity() {
         }
         card4Player1.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.text = currentCards?.name
+            card4Player1Value = currentCards!!.value
+            value = card4Player1Value +card3Player1Value +card2Player1Value + card1Player1Value
+            textCard1.text = value.toString()
+            //textCard1.text = currentCards?.name
             card4Player1.setImageResource(currentCards!!.image)
             card4Player1.setOnClickListener {
                 card4Player1
@@ -72,15 +87,15 @@ class GameActivity : AppCompatActivity() {
 
         card1Player2.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.inputType = currentCards!!.value
-            card1Player2.setImageResource(currentCards!!.image)
+            textCard1.text = "you have ${currentCards!!.value}"
+            //card1Player2.setImageResource(currentCards!!.image)
             card1Player2.setOnClickListener {
                 card1Player2
             }
         }
         card2Player2.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.inputType = currentCards!!.value
+            //textCard1.inputType = currentCards!!.value
             card2Player2.setImageResource(currentCards!!.image)
             card2Player2.setOnClickListener {
                 card2Player2
@@ -88,7 +103,7 @@ class GameActivity : AppCompatActivity() {
         }
         card3Player2.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.text = currentCards?.name
+           // textCard1.text = currentCards?.name
             card3Player2.setImageResource(currentCards!!.image)
             card3Player2.setOnClickListener {
                 card3Player2
@@ -96,7 +111,7 @@ class GameActivity : AppCompatActivity() {
         }
         card4Player2.setOnClickListener {
             currentCards = cardsList.getNewCard()
-            textCard1.text = currentCards?.name
+            //textCard1.text = currentCards?.name
             card4Player2.setImageResource(currentCards!!.image)
             card4Player2.setOnClickListener {
                 card4Player2
