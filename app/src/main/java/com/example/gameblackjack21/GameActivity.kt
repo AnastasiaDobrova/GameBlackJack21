@@ -28,7 +28,7 @@ class GameActivity : AppCompatActivity() {
         val gameText = findViewById<TextView>(R.id.gameText)
         val yesButton1 = findViewById<Button>(R.id.yesButton1)
         val yesButton2 = findViewById<Button>(R.id.yesButton2)
-        val winView = findViewById<TextView>(R.id.winView)
+        //val winView = findViewById<TextView>(R.id.winView)
 
         namePlayer1.text = "Player: "+name1View+""
         namePlayer2.text = "Player: "+name2View+""
@@ -51,11 +51,12 @@ class GameActivity : AppCompatActivity() {
 
         fun win() {
 
-            winView.text = "You won!"
+            //winView.text = "You won!"
 
         }
 
-        winView.setOnClickListener {
+        //winView.setOnClickListener {
+        noButton2.setOnClickListener {
             val dialogBuilder = AlertDialog.Builder(this)
             dialogBuilder.setMessage("Do you want to play again?")
                 .setCancelable(false)
