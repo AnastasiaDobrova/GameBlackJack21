@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#186A06"
     tools:context=".GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        android:weightSum="16"
+        android:weightSum="28"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,9 +25,9 @@
             android:id="@+id/gameText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:gravity="center"
-            android:text="TextView" />
+            android:text="Anastasia and Timur Samatov you are welcome to the game!" />
 
         <TextView
             android:id="@+id/namePlayer1"
@@ -34,15 +35,16 @@
             android:layout_height="match_parent"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_weight="2"
-            android:gravity="fill_vertical"
-            android:text="TextView" />
+            android:layout_marginBottom="16dp"
+            android:layout_weight="4"
+            android:gravity="bottom"
+            android:text="Anastasia you have 10 points. Do you want to take one more card?" />
 
         <LinearLayout
             android:id="@+id/cardsP"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:orientation="horizontal"
             android:weightSum="5">
 
@@ -65,30 +67,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/emptycard" />
 
             <ImageView
                 android:id="@+id/card4Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/emptycard" />
 
             <ImageView
                 android:id="@+id/card5Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/emptycard" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttons1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:orientation="horizontal"
-            android:weightSum="100">
+            android:weightSum="2">
 
             <Button
                 android:id="@+id/yesButton1"
@@ -96,8 +98,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_weight="50"
-                android:text="Button" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Hit!" />
 
             <Button
                 android:id="@+id/noButton1"
@@ -105,8 +108,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_weight="50"
-                android:text="Button" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Stand" />
         </LinearLayout>
 
         <TextView
@@ -115,15 +119,16 @@
             android:layout_height="match_parent"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_weight="2"
-            android:gravity="fill_vertical"
-            android:text="TextView" />
+            android:layout_marginBottom="16dp"
+            android:layout_weight="4"
+            android:gravity="bottom"
+            android:text="Player: Timur" />
 
         <LinearLayout
             android:id="@+id/cardsC"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="5">
@@ -147,55 +152,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/emptycard" />
 
             <ImageView
                 android:id="@+id/card4Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/emptycard" />
 
             <ImageView
                 android:id="@+id/card5Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/buttonsC"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:weightSum="100">
-
-            <Button
-                android:id="@+id/yesButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="50"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/noButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="50"
-                android:text="Button" />
+                app:srcCompat="@drawable/emptycard" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/winView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:text="TextView" />
     </LinearLayout>
 
