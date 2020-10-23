@@ -27,8 +27,9 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
 
+            android:fontFamily="@font/aladin"
             android:gravity="center"
-            android:text='android:autoSizeMaxTextSize="100sp"             android:autoSizeMinTextSize="12sp"             android:autoSizeStepGranularity="2sp"             android:autoSizeTextType="uniform"'
+            android:text="@string/anastasia_and_timur_samatov_you_are_welcome_to_the_game"
             app:autoSizeMaxTextSize="100sp"
             app:autoSizeMinTextSize="12sp"
             app:autoSizeStepGranularity="2sp"
@@ -42,8 +43,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="4"
+            android:fontFamily="@font/alegreya"
             android:gravity="bottom"
-            android:text="Anastasia you have 10 points. Do you want to take one more card?"
+            android:text="@string/anastasia_you_have_10_points_do_you_want_to_take_one_more_card"
             app:autoSizeMaxTextSize="20sp"
             app:autoSizeMinTextSize="12sp"
             app:autoSizeStepGranularity="2sp"
@@ -62,35 +64,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/purpleback"
+                android:contentDescription="TODO" />
 
             <ImageView
                 android:id="@+id/card2Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/purpleback"
+                android:contentDescription="TODO" />
 
             <ImageView
                 android:id="@+id/card3Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/emptycard" />
+                 />
 
             <ImageView
                 android:id="@+id/card4Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/emptycard" />
+                 />
 
             <ImageView
                 android:id="@+id/card5Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/emptycard" />
+                android:layout_weight="1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -98,6 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="4"
+            android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -108,8 +112,9 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/alegreya"
                 android:gravity="center"
-                android:text="Hit!" />
+                android:text="@string/hit" />
 
             <Button
                 android:id="@+id/noButton1"
@@ -118,8 +123,9 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/alegreya"
                 android:gravity="center"
-                android:text="Stand" />
+                android:text="@string/stand" />
         </LinearLayout>
 
         <TextView
@@ -130,8 +136,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="4"
+            android:fontFamily="@font/alegreya"
             android:gravity="bottom"
-            android:text="Player: Timur"
+            android:text="@string/player_timur"
             app:autoSizeMaxTextSize="20sp"
             app:autoSizeMinTextSize="12sp"
             app:autoSizeStepGranularity="2sp"
@@ -164,34 +171,59 @@
                 android:id="@+id/card3Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/emptycard" />
+                android:layout_weight="1"/>
 
             <ImageView
                 android:id="@+id/card4Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/emptycard" />
+                android:layout_weight="1"/>
 
             <ImageView
                 android:id="@+id/card5Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/emptycard" />
+                android:layout_weight="1"/>
         </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/win"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="5">
 
         <TextView
             android:id="@+id/winView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="4"
+            android:fontFamily="@font/bad_script"
             android:gravity="center"
             app:autoSizeMaxTextSize="100sp"
             app:autoSizeMinTextSize="12sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/yesPlayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/alegreya"
+            android:gravity="center"
+            android:text="Play again!!" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,11 @@
 package com.example.gameblackjack21
 
 class HeroesList {
-    val heroes = mutableListOf<Heroes>()
+    private val heroes = mutableListOf<Heroes>()
     init {
         initialize()
     }
-    fun initialize () {
+    private fun initialize () {
         heroes.add(Heroes("Angelina Jolie", R.drawable.angelinajolie))
         heroes.add(Heroes("Brad Pitt", R.drawable.bradpitt))
         heroes.add(Heroes("Chuck Norris", R.drawable.chucknorris))
@@ -26,7 +26,6 @@ class HeroesList {
             initialize()
         }
         val rnd = (0 until heroes.size).random()
-        val heroes = heroes.removeAt(rnd)
-        return heroes
+        return this.heroes.removeAt(rnd)
     }
 }

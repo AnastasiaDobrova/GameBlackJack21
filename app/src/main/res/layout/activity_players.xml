@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_weight="10"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/aladin"
             android:gravity="center"
             android:text="@string/what_is_your_name"
             android:textColor="#000000"
@@ -38,7 +38,7 @@
             android:layout_marginTop="16dp"
             android:layout_weight="5"
             android:ems="10"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/aladin"
             android:importantForAutofill="no"
             android:inputType="text"
             android:textAlignment="center"
@@ -52,8 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_weight="10"
-            android:fontFamily="@font/aclonica"
-            android:text="You will play with"
+            android:fontFamily="@font/aladin"
+            android:text="@string/you_will_play_with"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -63,7 +63,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="8dp"
             android:layout_weight="50"
-            app:srcCompat="@drawable/leonardodicaprio" />
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/celebrityView"
@@ -71,8 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_weight="10"
-            android:fontFamily="@font/aclonica"
-            android:text="TextView"
+            android:fontFamily="@font/aladin"
+            android:text="@string/textview"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -87,12 +87,12 @@
             android:layout_weight="15"
             android:backgroundTint="#FFFFFF"
             android:fadingEdge="horizontal|vertical"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/alegreya"
             android:shadowColor="#554747"
             android:shadowDx="10"
             android:shadowDy="10"
             android:shadowRadius="30"
-            android:text="Play!"
+            android:text="@string/play"
             android:textSize="30sp" />
     </LinearLayout>
 

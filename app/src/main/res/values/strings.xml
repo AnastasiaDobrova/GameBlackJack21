@@ -2,4 +2,14 @@
     <string name="app_name">GameBlackJack21</string>
     <string name="what_is_your_name">What is your name?</string>
     <string name="anastasia_and_timur_samatov_you_are_welcome_to_the_game">Anastasia and Timur Samatov you are welcome to the game!</string>
+    <string name="play">Play!</string>
+    <string name="you_will_play_with">You will play with</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="anastasia_you_have_10_points_do_you_want_to_take_one_more_card">Anastasia you have 10 points. Do you want to take one more card?</string>
+    <string name="hit">Hit!</string>
+    <string name="stand">Stand</string>
+    <string name="player_timur">Player: Timur</string>
+    <string name="you_are_welcome_to_the_game_black_jack_21_with_celebrities">You are welcome to the game Black Jack 21 with celebrities!</string>
+    <string name="start">Start!</string>
 </resources>
