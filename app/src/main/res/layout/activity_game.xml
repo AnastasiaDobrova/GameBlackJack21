@@ -196,38 +196,38 @@
                 android:contentDescription="@string/todo" />
         </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/win"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="4"
-        android:orientation="vertical"
-        android:weightSum="5">
-
-        <TextView
-            android:id="@+id/winView"
+        <LinearLayout
+            android:id="@+id/win"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="4"
-            android:fontFamily="@font/bad_script"
             android:gravity="center"
-            app:autoSizeMaxTextSize="100sp"
-            app:autoSizeMinTextSize="12sp"
-            app:autoSizeStepGranularity="2sp"
-            app:autoSizeTextType="uniform"
-            tools:ignore="NestedWeights" />
+            android:orientation="horizontal"
+            android:weightSum="100">
 
-        <Button
-            android:id="@+id/yesPlayButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:fontFamily="@font/alegreya"
-            android:gravity="center"
-            android:text="@string/play_again" />
+            <TextView
+                android:id="@+id/winView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:fontFamily="@font/abril_fatface"
+                android:gravity="center|start"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                tools:ignore="NestedWeights" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/yesPlayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:fontFamily="@font/alegreya"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="@string/play_again" />
+
+        </LinearLayout>
 
 
 

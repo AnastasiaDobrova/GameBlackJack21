@@ -2,6 +2,7 @@ package com.example.gameblackjack21
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlin.random.Random
@@ -33,6 +34,7 @@ class GameActivity : AppCompatActivity() {
         namePlayer1.text = "Player: $name1View"
         namePlayer2.text = "Player: $name2View"
         gameText.text = "$name1View and $name2View you are welcome to the game!"
+        yesPlayButton.visibility = View.INVISIBLE
 
         var valuePlayer1: Int
         var valuePlayer2: Int
@@ -112,7 +114,7 @@ class GameActivity : AppCompatActivity() {
         }
 
         noButton1.setOnClickListener {
-
+            yesPlayButton.visibility = View.VISIBLE
             card2Player2.setImageResource(currentCard2Hero!!.image)
             if(card3Player2Value !=0) card3Player2.setImageResource(currentCard3Hero!!.image)
             if(card4Player2Value !=0) card4Player2.setImageResource(currentCard4Hero!!.image)
@@ -153,9 +155,6 @@ class GameActivity : AppCompatActivity() {
                 valuePlayer2 in 22 until valuePlayer1 -> winView.text = "$name2View won!"
             }
             yesPlayButton.setOnClickListener {
-
-                intent.putExtra("Player1", name1View)
-                intent.putExtra("Player2", name2View)
                 startActivity(intent)
             }
         }
