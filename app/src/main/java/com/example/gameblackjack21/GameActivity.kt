@@ -27,7 +27,7 @@ class GameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         val intent = intent
-        var name1View = intent.getStringExtra("Player1")
+        val name1View = intent.getStringExtra("Player1")
         val name2View = intent.getStringExtra("Player2")
 
         namePlayer1.text = "Player: $name1View"

@@ -65,7 +65,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/purpleback"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/todo"
+                tools:ignore="NestedWeights" />
 
             <ImageView
                 android:id="@+id/card2Player1"
@@ -73,27 +74,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/purpleback"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card3Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                 />
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card4Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                 />
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card5Player1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
 
         <LinearLayout
@@ -114,7 +116,8 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/alegreya"
                 android:gravity="center"
-                android:text="@string/hit" />
+                android:text="@string/hit"
+                tools:ignore="ButtonStyle,NestedWeights" />
 
             <Button
                 android:id="@+id/noButton1"
@@ -125,7 +128,8 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/alegreya"
                 android:gravity="center"
-                android:text="@string/stand" />
+                android:text="@string/stand"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
 
         <TextView
@@ -158,32 +162,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/purpleback"
+                tools:ignore="NestedWeights"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card2Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/purpleback" />
+                app:srcCompat="@drawable/purpleback"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card3Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card4Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/card5Player2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
 
     <LinearLayout
@@ -197,14 +207,15 @@
         <TextView
             android:id="@+id/winView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="4"
             android:fontFamily="@font/bad_script"
             android:gravity="center"
             app:autoSizeMaxTextSize="100sp"
             app:autoSizeMinTextSize="12sp"
             app:autoSizeStepGranularity="2sp"
-            app:autoSizeTextType="uniform" />
+            app:autoSizeTextType="uniform"
+            tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/yesPlayButton"
@@ -214,11 +225,7 @@
             android:layout_marginRight="8dp"
             android:fontFamily="@font/alegreya"
             android:gravity="center"
-            android:text="Play again!!" />
-
-
-
-
+            android:text="@string/play_again" />
 
     </LinearLayout>
 
