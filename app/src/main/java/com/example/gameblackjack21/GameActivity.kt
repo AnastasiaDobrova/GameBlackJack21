@@ -147,12 +147,11 @@ class GameActivity : AppCompatActivity() {
                 valuePlayer1 == valuePlayer2 -> winView.text = "You have played with draw!"
 
                 valuePlayer1 < valuePlayer2 && valuePlayer2 > 21 -> winView.text = "$name1View won!"
+                valuePlayer1 < valuePlayer2 && valuePlayer2 < 21 -> winView.text = "$name2View won!"
                 valuePlayer2 < valuePlayer1 && valuePlayer1 > 21 -> winView.text = "$name2View won!"
-                valuePlayer2 in (valuePlayer1 + 1)..20 -> winView.text = "$name2View won!"
-                valuePlayer1 in (valuePlayer2 + 1)..20 -> winView.text = "$name1View won!"
+                valuePlayer2 > valuePlayer1 && valuePlayer1 < 21 -> winView.text = "$name1View won!"
 
-                valuePlayer1 in 22 until valuePlayer2 -> winView.text = "$name1View won!"
-                valuePlayer2 in 22 until valuePlayer1 -> winView.text = "$name2View won!"
+
             }
             yesPlayButton.setOnClickListener {
                 startActivity(intent)

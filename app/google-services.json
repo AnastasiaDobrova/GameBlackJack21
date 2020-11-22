@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "815442553337",
+    "firebase_url": "https://gameblackjack21-2b4f5.firebaseio.com",
+    "project_id": "gameblackjack21-2b4f5",
+    "storage_bucket": "gameblackjack21-2b4f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815442553337:android:a86c77d01f95a5e92c7528",
+        "android_client_info": {
+          "package_name": "com.example.gameblackjack21"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815442553337-6ngujc50sfkk80ihsbifpmfl6lcecbq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkb-KUNxCqT0g2d6w885IeHt_A2mZeIJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815442553337-6ngujc50sfkk80ihsbifpmfl6lcecbq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

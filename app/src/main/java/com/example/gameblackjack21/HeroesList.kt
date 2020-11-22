@@ -29,3 +29,8 @@ class HeroesList {
         return this.heroes.removeAt(rnd)
     }
 }
+
+class Heroes (
+    var name: String, var image : Int)
+
+
