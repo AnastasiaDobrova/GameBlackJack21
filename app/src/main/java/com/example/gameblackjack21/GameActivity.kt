@@ -8,7 +8,13 @@ import kotlinx.android.synthetic.main.activity_game.*
 import kotlin.random.Random
 import kotlin.random.nextInt
 
+
+
+
 class GameActivity : AppCompatActivity() {
+
+
+
 
     private val cardsList = CardsList()
     private var currentCard1 : Cards? = null
@@ -26,6 +32,9 @@ class GameActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
+
+
+
 
         val intent = intent
         val name1View = intent.getStringExtra("Player1")
@@ -158,6 +167,8 @@ class GameActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }
 
 
